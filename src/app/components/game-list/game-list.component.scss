@@ -1,0 +1,65 @@
+.section {
+  padding: 240px 0px 320px 0px;
+  background-image: url('/../assets/images/backgroundSearch.jpg');
+  background-color: #2d2d2d;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.heading-content{
+  transition: all .3s ease-in-out;
+  text-align: center;
+  position:absolute;
+  padding: 0px;
+  margin: 0px;
+  h1{
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-bottom: 0;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0px;
+  }
+  p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: "Raleway" !important;
+    text-align: center;
+    line-height: 33px;
+    margin: 30px auto;
+    width: 80%;
+    padding: 0px;
+  }
+}
+
+.search{
+  width:80%;
+  border-top:0px;
+  border-left:0px;
+  border-right:0px;
+  border-bottom:1px solid rgba(102, 45, 188, 0.8);
+  background:none;
+  float:left;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+input.search.ng-valid.ng-dirty.ng-touched{
+  border-top:0px;
+  border-left:0px;
+  border-right:0px;
+  border-bottom:1px solid rgba(102, 45, 188, 0.8);
+}
+
+.btn{
+  width: 18%;
+  border-radius: 5px;
+  background: linear-gradient(to right, #662DBC, #ee5972);
+  border: none;
+  color: #fff;
+  float:right;
+  font-size: 18px;
+}

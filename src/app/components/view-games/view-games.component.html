@@ -1,0 +1,18 @@
+<div *ngIf="!isLoading && games.length === 0">
+  <h1 class="row justify-content-center m-3">{{ message }}</h1>
+</div>
+
+<div class="card-columns m-3" *ngIf="games.length > 0">
+  <div class="card card-hover h-100" *ngFor="let game of games">
+    <div class="card-body">
+      <h3>{{ game.title }}</h3>
+      <img [src]="game.thumbnail" alt="{{ game.title }}" class="card-img-top"/>
+      <p>{{ game.short_description }}</p>
+      <a [href]="game.game_url" target="_blank">Jugar</a>
+      <p>Genre: {{ game.genre }}</p>
+      <p>Platform: {{ game.platform }}</p>
+    </div>
+  </div>
+</div>
+
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-8bits" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>

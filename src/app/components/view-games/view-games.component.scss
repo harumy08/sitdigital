@@ -1,0 +1,95 @@
+@media (min-width: 356px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+.card-columns .card {
+  margin-bottom: 1.25rem;
+  background: linear-gradient(to right, rgba(103, 46, 189, 0.852), rgba(238, 89, 114, 0.85));
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 0;
+  cursor: pointer;
+}
+
+.card-hover {
+  .reveal {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+
+  &:hover .reveal {
+    height: auto;
+    visibility: visible;
+    opacity: 0.7;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: white;
+  }
+
+  img {
+    transition: filter .5s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+  &:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}
+
+.reveal p {
+  line-height: 125%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-body a{
+  color:#ffffff;
+  font-weight: bold;
+}

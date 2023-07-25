@@ -1,0 +1,21 @@
+<div class="section">
+  <div class="sh-section-container container">
+    <div class="row heading-content">
+      <h1>Welcome!</h1>
+      <p>Discover a diversity of options to enjoy, all in one place.
+          Whether you are looking for action, adventure, strategy games, or any other genre,
+          our list of results will show you the best choices to satisfy your preferences.
+      </p>
+      <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 mt-5">
+            <input type="text"  [(ngModel)]="category" placeholder="Search..." class="search"/>
+            <button class="btn" (click)="changeGameList(newGames)">Search</button>
+        </div>
+          <div class="col-md-3"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<app-view-games [games]="games"></app-view-games>
